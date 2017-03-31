@@ -159,8 +159,8 @@ The luajit OpenCV SVM code is as follows.
 	--- test image ---
 	local testDataMat = torch.FloatTensor(1, 90*120):zero()
 
-	local apples_dir = "./images/testimage"
-	local files = io.popen('find "'..apples_dir..'" -type f') 
+	local test_dir = "./images/testimage"
+	local files = io.popen('find "'..test_dir..'" -type f') 
 
 	local index = 1
 	file in files:lines() do
